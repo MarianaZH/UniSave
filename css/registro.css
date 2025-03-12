@@ -1,0 +1,79 @@
+
+.contenido-registro{
+    display: flex;
+
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .registro .contenido-registro .contenedor-reg{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    padding-right: 30px;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+  z-index: 1;
+  text-align: center;
+    
+      justify-content: center;
+      align-items: center;
+
+margin-top: 100px;
+-webkit-box-shadow: 10px 10px 0px 0px rgba(184,184,184,1);
+-moz-box-shadow: 10px 10px 0px 0px rgba(184,184,184,1);
+box-shadow: 10px 10px 0px 0px rgba(184,184,184,1);
+
+}
+
+.registro .contenido-registro .contenedor-reg span{
+    color:#054A89;
+    width: fit-content;
+}
+.registro .contenido-registro .contenedor-reg form .boton .bt-enviar{
+    background-color: #B42929;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 50px;
+    color: white;
+   border-style: none;
+}
+.registro .contenido-registro .contenedor-reg form .boton{
+    align-items: center;
+   
+  
+}
+
+.registro .contenido-registro .contenedor-reg .fila{
+    margin-bottom: 15px;
+}
+   
+.registro .contenido-registro .contenedor-reg .fila .input-mitad{
+    padding: 10px 10px;
+    border: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.registro .contenido-registro .contenedor-reg .fila img{
+    width: 30px; height: 40px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+.registro .contenido-registro .contenedor-reg .info .informacionChange{
+    color: #a1a1a1;
+    padding-top: 3px;
+    font-size: 14px;
+    
+}

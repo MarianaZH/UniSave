@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+:root{
+    --tran-03: all 0.2s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.4s ease;
+    --primary-color: #054A89;
+    --secondary-color: rgb(231, 231, 231);
+    --background-color: rgb(255, 255, 255);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--background-color);
+    transition: var(--tran-05);
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+iframe{
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+::selection{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+
+.slidebar {
+    margin-top: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background-color: var(--secondary-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+
+.slidebar.close{
+    width: 88px;
+}
+
+.slidebar li{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.slidebar header .image,
+.slidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+.slidebar .icon {
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.slidebar .text,
+.slidebar .icon{
+    color: black;
+    transition: var(--tran-03);
+}
+
+.slidebar .text{
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.slidebar.close .text{
+    opacity: 0;
+}
+
+.slidebar header{
+    position: relative;
+}
+
+.slidebar header .logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profe{
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+}
+
+.slidebar header .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slidebar header .image img{
+    width: 20px;
+    border-radius: 6px;
+}
+
+.slidebar header .toggle{
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    height: 35px;
+    width: 35px;
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--tran-05);
+    border-radius: 6px;
+}
+
+.slidebar.close .toggle{
+    width: 100%;
+    top: 20%;
+}
+
+.slidebar .menu{
+    margin-top: 40px;
+}
+
+.slidebar li.search-box{
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.slidebar li.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--tran-05);
+}
+
+.slidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+
+.slidebar li a:hover{
+    background-color: var(--primary-color);
+}
+
+.slidebar li a:hover .icon,
+.slidebar li a:hover .text {
+    color: white;
+}
+
+.slidebar .menu-bar{
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.menu-bar::-webkit-scrollbar{
+    display: none;
+}
+
+.slidebar .menu-bar .mode{
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    position: relative;
+    transition: var(--tran-05);
+}
+
+.home {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: aliceblue;
+    transition: var(--tran-05);
+}
+
+.home .text{
+    padding: 12px 60px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+.slidebar.close ~ .home
+:root{
+    --tran-03: all 0.2s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.4s ease;
+}
+

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIARIO</title>
+    <link rel="stylesheet" href="articulos.css">
+
+</head>
+<body>
+    <h1>DESTACADOS</h1>
+    <section id="portafolio">
+        <style>
+            
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    font-family: "Mulish", sans-serif;/*"Noto Sans", sans-serif;*/
+
+}
+            .overlay-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: visibility 0.5s ease;
+               
+            }
+            
+            .iframe-container {
+                background: #f5f5f5;
+                border-radius: 20px;
+                box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+                position: relative;
+                transform: scale(0.7);
+                transition: transform 0.3s ease;
+                
+            }
+            
+            .iframe-container iframe {
+                width: 950px;
+                height: 550px;
+                border: none;
+                margin: 0;
+                border-radius: 20px;
+
+            }
+            
+            .close-btn {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background: rgb(184, 0, 0);
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+                border-radius: 100%;
+                font-size: 16px;
+            }
+            
+            /* Animación al aparecer */
+            .overlay-modal.active {
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .overlay-modal.active .iframe-container {
+                transform: scale(0.8);
+
+            }
+
+           
+            </style>
+        
+       <div class="total">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/zapniña.png" alt="">
+                <div class="info">
+                    <h4>Zapatos niña talla 32</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dzapato.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/zapniña.png" alt="">
+                <div class="info">
+                    <h4>Zapatos niña talla 32</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dzapato.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/zapniña.png" alt="">
+                <div class="info">
+                    <h4>Zapatos niña talla 32</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dzapato.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda3.png" alt="">
+                <div class="info">
+                    <h4>Falda cuadros niña talla L</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dfalda.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda3.png" alt="">
+                <div class="info">
+                    <h4>Falda cuadros niña talla L</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dfalda.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda3.png" alt="">
+                <div class="info">
+                    <h4>Falda cuadros niña talla L</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dfalda.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+      
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/sudadera3.png" alt="">
+                <div class="info">
+                    <h4>Sudadera ed física verde</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dsudadera.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/sudadera3.png" alt="">
+                <div class="info">
+                    <h4>Sudadera ed física verde</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dsudadera.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/sudadera3.png" alt="">
+                <div class="info">
+                    <h4>Sudadera ed física verde</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dsudadera.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            
+      
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/camisa2.png" alt="">
+                <div class="info">
+                    <h4>Camiseta ed fisica talla S</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dcamisa.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/camisa2.png" alt="">
+                <div class="info">
+                    <h4>Camiseta ed fisica talla S</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dcamisa.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/camisa2.png" alt="">
+                <div class="info">
+                    <h4>Camiseta ed fisica talla S</h4>
+                    <a href="#" class="btn-open" data-iframe="infos\Dcamisa.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    </section>
+    <div class="overlay-modal" id="overlay-modal">
+        <div class="iframe-container">
+            <button class="close-btn" onclick="closeIframe()">X</button>
+            <iframe id="iframeModal" src=""></iframe>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.btn-open').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                let iframeSrc = this.getAttribute('data-iframe');
+                let overlay = document.getElementById('overlay-modal');
+                let iframe = document.getElementById('iframeModal');
+                iframe.src = iframeSrc;
+                overlay.classList.add('active');
+            });
+        });
+        
+        function closeIframe() {
+            let overlay = document.getElementById('overlay-modal');
+            let iframe = document.getElementById('iframeModal');
+            overlay.classList.remove('active');
+            setTimeout(() => {
+                iframe.src = '';
+            }, 500); // Espera la animación antes de limpiar el iframe
+        }
+        </script>
+</body>
+</html>
+
+

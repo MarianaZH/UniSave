@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido del Iframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           
+        }
+
+        .box {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+        }
+
+        .large-box {
+            width: 580px;
+            height: 500px;
+        }
+
+        .small-box {
+            width: 280px;
+            height: 500px;
+        }
+
+        .header, .footer {
+            background: #e0e0e0;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .profile-icon {
+            width: 30px;
+            height: 30px;
+            background: black;
+            border-radius: 50%;
+        }
+
+        .footer {
+            margin-top: auto;
+            justify-content: space-between;
+        }
+
+        .contentimg {
+            background: #fffffffb;
+            height: 350px;
+            margin: 10px 0;
+            border-radius: 5px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        img{
+            border-radius: 20px;
+            height: 100%;
+            width: 100%;
+            box-shadow: 0px 10px 20px -9.5px rgba(117,117,117,1);
+
+        }
+
+        .content {
+            background: #e0e0e0;
+            height: 350px;
+            margin: 10px 0;
+            border-radius: 10px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body style="padding: 1px;">
+
+    <div class="container">
+        <!-- Cuadro grande -->
+        <div class="box large-box">
+            <div class="header">
+                <div class="profile-icon"></div>
+                <span>Usuario</span>
+            </div>
+            <div class="contentimg"><img src="/catalogo/assets/camisa2.png" alt=""></div>
+            <div class="footer">
+                <div class="profile-icon"></div>
+                <span>Mensaje</span>
+                <span style="cursor: pointer;">🛒</span>
+            </div>
+        </div>
+
+        <!-- Cuadro pequeño -->
+        <div class="box small-box">
+            <div class="header">
+                <div class="profile-icon"></div>
+                <span>Usuario</span>
+            </div>
+            <div class="content"></div>
+            <div class="footer">
+                <div class="profile-icon"></div>
+                <span>Mensaje</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

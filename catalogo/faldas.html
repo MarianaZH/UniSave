@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIARIO</title>
+    <link rel="stylesheet" href="articulos.css">
+</head>
+<body>
+    <h1>FALDAS</h1>
+    <section id="portafolio">
+        <style>
+            
+            @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+            
+            body {
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                overflow-x: hidden;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 70px;
+                font-family: "Mulish", sans-serif;/*"Noto Sans", sans-serif;*/
+            
+            }
+                        .overlay-modal {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.5);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: visibility 0.5s ease;
+                           
+                        }
+                        
+                        .iframe-container {
+                            background: #f5f5f5;
+                            border-radius: 20px;
+                            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+                            position: relative;
+                            transform: scale(0.7);
+                            transition: transform 0.3s ease;
+                            
+                        }
+                        
+                        .iframe-container iframe {
+                            width: 950px;
+                            height: 550px;
+                            border: none;
+                            margin: 0;
+                            border-radius: 20px;
+            
+                        }
+                        
+                        .close-btn {
+                            position: absolute;
+                            top: -10px;
+                            right: -10px;
+                            background: rgb(184, 0, 0);
+                            color: white;
+                            border: none;
+                            padding: 5px 10px;
+                            cursor: pointer;
+                            border-radius: 100%;
+                            font-size: 16px;
+                        }
+                        
+                        /* Animación al aparecer */
+                        .overlay-modal.active {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        
+                        .overlay-modal.active .iframe-container {
+                            transform: scale(0.8);
+            
+                        }
+            
+                       
+                        </style>
+
+      <div class="total">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda1.png" alt="">
+                <div class="info">
+                    <h4>Falda escolar azul turquí</h4>
+<a href="#" class="btn-open" data-iframe="infos\Falda1.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda1.png" alt="">
+                <div class="info">
+                    <h4>Falda escolar azul turquí</h4>
+<a href="#" class="btn-open" data-iframe="infos\Falda1.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda1.png" alt="">
+                <div class="info">
+                    <h4>Falda escolar azul turquí</h4>
+<a href="#" class="btn-open" data-iframe="infos\Falda1.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda2.png" alt="">
+                <div class="info">
+                    <h4>Falda escolar tablones</h4>
+<a href="#" class="btn-open" data-iframe="infos\Falda2.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda2.png" alt="">
+                <div class="info">
+                    <h4>Falda escolar tablones</h4>
+<a href="#" class="btn-open" data-iframe="infos\Falda2.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="assets/falda2.png" alt="">
+                <div class="info">
+                    <h4>Falda escolar tablones</h4>
+<a href="#" class="btn-open" data-iframe="infos\Falda2.html">
+                <input type="submit" value="Ver más " style="background-color: #054A89;
+                cursor: pointer;
+                transition: .5s;
+                padding: 10px 15px;
+                font-size: 15px;
+                border-radius: 50px;
+                color: white;
+                border-style: none;" class="btn-contactanos">
+            </a>                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Crear el modal
+            let modal = document.createElement("div");
+            modal.classList.add("overlay-modal");
+            modal.innerHTML = `
+                <div class="iframe-container">
+                    <button class="close-btn">&times;</button>
+                    <iframe src=""></iframe>
+                </div>
+            `;
+            document.body.appendChild(modal);
+    
+            // Referencias a elementos
+            const iframe = modal.querySelector("iframe");
+            const closeBtn = modal.querySelector(".close-btn");
+    
+            // Manejar la apertura del modal
+            document.querySelectorAll(".btn-open").forEach(button => {
+                button.addEventListener("click", function (event) {
+                    event.preventDefault(); // Evita que el enlace recargue la página
+                    const url = this.getAttribute("data-iframe");
+                    iframe.src = url;
+                    modal.classList.add("active");
+                });
+            });
+    
+            // Manejar el cierre del modal
+            closeBtn.addEventListener("click", function () {
+                modal.classList.remove("active");
+                iframe.src = ""; // Opcional: Limpia el iframe para detener su contenido
+            });
+    
+            // Cerrar modal al hacer clic fuera del contenedor
+            modal.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.classList.remove("active");
+                    iframe.src = "";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
